@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+#logo {
+    margin: 0.5rem;
+}
+
+header nav ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.fa-search,
+input {
+    background-color: #ffffff;
+    padding: 2px;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+
+.azul {
+    background-color: #1259c3;
+    color: #fff;
+    padding: 7px;
+    border-radius: 6px;
+    font-size: 24px;
+}
+
+main {
+    background-color: #ebebeb;
+    padding-bottom: 14px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripciones {
+    font-size: 16px;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+article {
+    text-align: center;
+    margin: 10px auto;
+    background-color: #fff;
+    width: 50%;
+    display: block;
+    padding: 4px;
+    overflow: hidden;
+
+}
+
+.iconoPie {
+    font-size: 2em;
+    color: #1259c3;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+section p {
+    margin-top: 0px;
+}
+
+footer section {
+    text-align: center;
+    width: 50%;
+    margin: 24px auto;
+}
