@@ -1,6 +1,7 @@
-body {
+* {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    box-sizing: border-box;
 }
 
 header {
@@ -44,6 +45,8 @@ input {
 main {
     background-color: #ebebeb;
     padding-bottom: 14px;
+    width: 90%;
+    margin: 0px auto;
 }
 
 h2 {
@@ -52,10 +55,12 @@ h2 {
 
 .precio {
     font-size: 18px;
+    margin-bottom: 0px;
 }
 
 .descuentos {
     font-size: 16px;
+    color: #39b54a;
 }
 
 .descripciones {
@@ -68,13 +73,18 @@ h2 {
 
 article {
     text-align: center;
-    margin: 10px auto;
+    margin: 10px auto 0px;
     background-color: #fff;
-    width: 50%;
+    width: 70%;
     display: block;
-    padding: 4px;
     overflow: hidden;
 
+}
+
+article div {
+    text-align: left;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
 }
 
 .iconoPie {
