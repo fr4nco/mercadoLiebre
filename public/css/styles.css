@@ -6,15 +6,21 @@
 
 header {
     background-color: #EAC926;
+    width: 90%;
+    margin: 0px auto;
 }
 
 #logo {
     margin: 0.5rem;
+    width: 50%;
 }
 
 header nav ul {
     margin-left: 0px;
     padding-left: 0px;
+    display: none;
+    width: 95%;
+    margin: auto;
 }
 
 header nav ul li {
@@ -26,12 +32,27 @@ header nav ul li a {
     color: #000;
 }
 
+
+.search, #logo{
+    width: 95%;
+    margin: auto;
+}
+#logo img{
+    width: 33%;
+}
+
 .fa-search,
 input {
     background-color: #ffffff;
     padding: 2px;
     border: 1px solid #333;
     border-radius: 2px;
+}
+header input{
+    width: 100%;
+}
+.banner{
+    width: 100%;
 }
 
 .azul {
@@ -65,6 +86,7 @@ h2 {
 
 .descripciones {
     font-size: 16px;
+    display: none;
 }
 
 .centralizar {
@@ -75,10 +97,22 @@ article {
     text-align: center;
     margin: 10px auto 0px;
     background-color: #fff;
-    width: 70%;
+    max-width: 300px;
     display: block;
     overflow: hidden;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 
+}
+article img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+article i{
+    color: #39b54a;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    padding: 0.8rem;
 }
 
 article div {
@@ -104,4 +138,21 @@ footer section {
     text-align: center;
     width: 50%;
     margin: 24px auto;
+}
+
+@media (min-width: 361px) {
+    .descripciones{
+        display: block;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header nav ul{
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    
 }
