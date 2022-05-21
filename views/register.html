@@ -18,15 +18,14 @@
             <div id="logo">
                 <a href="/">
                     <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" />
-               </a>            </div>
+               </a>
+            </div>
             <div class="search">
                 <form action="/" name="formRegistrar" method="get">
 
                     <input type="text" placeholder="Buscar productos, marcas..." name="buscar" class="search">
                     <button type="submit"><i class="fas fa-search"></i></button>
-                
                 </form>
-                
             </div>
             <div class="centralizar">
                 <p><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de
@@ -60,7 +59,7 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="nav2">
                         <ul>
                             <li>
@@ -93,117 +92,123 @@
 
     <main>
 
-        <div class="banner">
-            <img src="/images/img-home-banner.jpg" class="banner" width="300" alt="Banner" />
-        </div>
 
-        <section id="ultimaVisita">
 
-            <h2>Basado en tu última visita</h2>
+        <form action="/" name="formRegistrar" method="post">
 
-            <article>
-                <img src="/images/img-cafetera-moulinex.jpg" width="300" alt="Cafetera Moulinex" />
-                <div class="artCont">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="precioDesc">
-                        <p class="precio">$6.770</p>
-                        <p class="descuentos">40% OFF</p>
-                    </div>
-                    <strong class="descripciones">Cafetera Moulinex</strong>
+
+
+            <section id="formulario">
+
+                <h2 class="block"> Registrarme</h2>
+
+                <div class="columna">
+                    <input type="text" required name="nombre" placeholder="Ingrese su nombre" title="Ingresa tu nombre" />
                 </div>
-            </article>
-
-            <article>
-                <img src="/images/img-macbook-pro-2019.jpg" width="300" alt="MacBook Pro 2019" />
-                <div class="artCont">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="precioDesc">
-                        <p class="precio">$230.000</p>
-                        <p class="descuentos">20% off</p>
-                    </div>
-                    <strong class="descripciones">MacBook Pro 2019</strong>
+                <div class="columna">
+                    <input type="text" required name="apellido" placeholder="Ingrese su apellido" title="Ingresa tu apellido" />
                 </div>
-            </article>
-
-            <article>
-                <img src="/images/img-samsung-galaxy-s10.jpg" width="300" alt="Samsung Galaxy S10" />
-                <div class="artCont">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="precioDesc">
-                        <p class="precio">$70.500</p>
-                        <p class="descuentos">10% off</p>
-                    </div>
-                    <strong class="descripciones">Samsung Galaxy S10</strong>
+                <div class="columna">
+                    <input type="email" required name="email" placeholder="micorreo@mail.com" title="Mi e-mail" />
                 </div>
-            </article>
-
-            <article>
-                <img src="/images/img-tv-samsung-smart.jpg" width="300" alt='SmartTv Samsung 43"' />
-                <div class="artCont">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="precioDesc">
-                        <p class="precio">$23.200</p>
-                        <p class="descuentos">5% off</p>
-                    </div>
-                    <strong class="descripciones">SmartTv Samsung 43"</strong>
+                <div class="columna">
+                    <label> Fecha de nacimiento:</label><br>
+                    <input type="date" required name="dd/mm/aaaa" placeholder="dd/mm/aaaa" />
                 </div>
-            </article>
-        </section>
-
-
-        <section id="seccionOfertas">
-
-            <h2>Sección de Ofertas</h2>
-
-            <article>
-                <img src="/images/img-cafetera-moulinex.jpg" width="300" alt="Cafetera Moulinex" />
-                <div class="artCont">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="precioDesc">
-                        <p class="precio">$6.770</p>
-                        <p class="descuentos">40% OFF</p>
-                    </div>
-                    <strong class="descripciones">Cafetera Moulinex</strong>
+                <div class="columna">
+                    <input type="text" required name="domicilio" placeholder="Ingrese su domicilio"
+                        title="Ingrese su domicilio" />
                 </div>
-            </article>
-
-            <article>
-                <img src="/images/img-macbook-pro-2019.jpg" width="300" alt="MacBook Pro 2019" />
-                <div class="artCont">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="precioDesc">
-                        <p class="precio">$230.000</p>
-                        <p class="descuentos">20% off</p>
+                <div class="columna">
+                    <label> Perfil de usuario:</label><br>
+                    <div class="radio">
+                        <input type="radio" name="sexo" value="hombre" checked>
                     </div>
-                    <strong class="descripciones">MacBook Pro 2019</strong>
-                </div>
-            </article>
-
-            <article>
-                <img src="/images/img-samsung-galaxy-s10.jpg" width="300" alt="Samsung Galaxy S10" />
-                <div class="artCont">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="precioDesc">
-                        <p class="precio">$70.500</p>
-                        <p class="descuentos">10% off</p>
+                    <div class="radioLabel">
+                        Hombre
                     </div>
-                    <strong class="descripciones">Samsung Galaxy S10</strong>
-                </div>
-            </article>
 
-            <article>
-                <img src="/images/img-tv-samsung-smart.jpg" width="300" alt='SmartTv Samsung 43"' />
-                <div class="artCont">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="precioDesc">
-                        <p class="precio">$23.200</p>
-                        <p class="descuentos">5% off</p>
+                    <div class="radio">
+                        <input type="radio" name="sexo" value="mujer">
                     </div>
-                    <strong class="descripciones">SmartTv Samsung 43"</strong>
+                    <div class="radioLabel">
+                        Mujer
+                    </div>
                 </div>
-            </article>
 
-        </section>
+                <div class="columna">
+                    <label> Intereses:</label><br>
+                    
+                    <div class="radio">
+                        <input type="checkbox"  name="int1" value="Electro">
+                    </div>
+                    <div class="radioLabel">
+                        Electro
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="int2" value="Moda">
+                    </div>
+                    <div class="radioLabel">
+                        Moda
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="int3" value="Hogar">
+                    </div>
+                    <div class="radioLabel">
+                        Hogar
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="int4" value="Jugueteria">
+                    </div>
+                    <div class="radioLabel">
+                        Jugetería
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="int5" value="Jugueteria">
+                    </div>
+                    <div class="radioLabel">
+                        Jugetería
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="int6" value="Jugueteria">
+                    </div>
+                    <div class="radioLabel">
+                        Vida Sana
+                    </div>
+
+                </div>
+
+                <div class="columna">
+                    <label> Foto Perfil:</label><br>
+                    <input type="file" name="foto"
+                        title="Foto" />
+                </div>
+
+                <div class="columna">
+                    <label> Contraseña:</label><br>
+                    <input type="password" required name="pass" placeholder="Nueva contraseña" />
+                </div>
+
+                <div class="columna">
+                    <label> Confirmar contraseña:</label><br>
+                    <input type="password" required name="cPass" placeholder="Confirmar contraseña" />
+                </div>
+              
+                <div class="radio">
+                    <input type="submit" value="Enviar" title="¿Listo?" />
+                </div>
+                <div class="radioLabel">
+                    <input type="reset" value="Cancelar" />
+                </div>
+
+            </section>
+        </form>
+
 
     </main>
 
