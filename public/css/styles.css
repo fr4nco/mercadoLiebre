@@ -303,7 +303,7 @@ label {
 
 footer section {
     text-align: center;
-    width: 50%;
+    width: 100%;
     margin: 24px auto;
 }
 
@@ -315,7 +315,7 @@ footer section {
     nav {
         display: block;
     }
-
+   
     .burger-menu {
         display: none;
     }
