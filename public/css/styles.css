@@ -310,10 +310,17 @@ label {
 #formulario input[type="submit"]:hover {
     background-color: #0022AA;
 }
+
+footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
 footer section {
     text-align: center;
     width: 100%;
     margin: 24px auto;
+    padding: 1rem;
 }
 
 footer section i{
