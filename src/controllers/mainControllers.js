@@ -50,15 +50,16 @@ const controller = {
 	},
 
 	search: (req, res) => {
-		const searchProduct = req.query.product;
+		let searchProduct = req.query.product;
 		
 		const results = [];
+
 		for (let i = 0; i < products.length; i++) {
 			if (products[i].name.includes(searchProduct)) {
-				results.push(products[i]);
+					results[i] = products[i];
 			}
-			res.render('products', {results,searchProduct});
 		}
+		res.render('products', {results,searchProduct});
 	}
 
 
