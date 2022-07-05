@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Cafetera Moulinex",
+        "price": "400",
+        "discount": "10",
+        "amount": "10",
+        "size": "s",
+        "person": "hombres",
+        "productType": "offer",
+        "category": "remeras",
+        "image": [
+            "img-cafetera-moulinex.jpg"
+        ],
+        "description": "ajsdhajsdh  jas hdj  sa hdjdh jsahdjas hjhasdjasjasjdhasjdhasjd "
+    },
+    {
+        "id": 2,
+        "name": "Macbook pro 2019",
+        "price": "1400",
+        "discount": "10",
+        "amount": "5",
+        "size": "m",
+        "person": "hombres",
+        "productType": "offer",
+        "category": "championes",
+        "image": [
+            "img-macbook-pro-2019.jpg"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat ante nec massa tempus blandit. Duis fermentum tortor non leo scelerisque maximus eget vel magna. Maecenas ut neque in felis fringilla pulvinar. Integer condimentum dolor libero, id accumsan velit vulputate in. Duis interdum, magna vel blandit blandit, leo arcu hendrerit turpis, eu consectetur massa lacus sed velit. Aliquam dapibus porttitor nulla, ut tristique metus auctor sed. "
+    },
+    {
+        "id": 3,
+        "name": "img-samsung-galaxy-s10",
+        "price": "1.990",
+        "discount": "10",
+        "amount": "5",
+        "size": "m",
+        "person": "mujeres",
+        "productType": "latest",
+        "category": "remeras",
+        "image": [
+            "img-samsung-galaxy-s10.jpg"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat ante nec massa tempus blandit. Duis fermentum tortor non leo scelerisque maximus eget vel magna. Maecenas ut neque in felis fringilla pulvinar. Integer condimentum dolor libero, id accumsan velit vulputate in. Duis interdum, magna vel blandit blandit, leo arcu hendrerit turpis, eu consectetur massa lacus sed velit. Aliquam dapibus porttitor nulla, ut tristique metus auctor sed. "
+    },
+    {
+        "id": 4,
+        "name": "tv samsung smart",
+        "price": "1790",
+        "discount": "10",
+        "amount": "5",
+        "size": "m",
+        "person": "hombres",
+        "productType": "latest",
+        "category": "remeras",
+        "image": [
+            "img-tv-samsung-smart.jpg"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat ante nec massa tempus blandit. Duis fermentum tortor non leo scelerisque maximus eget vel magna. Maecenas ut neque in felis fringilla pulvinar. Integer condimentum dolor libero, id accumsan velit vulputate in. Duis interdum, magna vel blandit blandit, leo arcu hendrerit turpis, eu consectetur massa lacus sed velit. Aliquam dapibus porttitor nulla, ut tristique metus auctor sed. "
+    }
+]

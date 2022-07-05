@@ -1,14 +1,26 @@
 * {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 header {
@@ -83,6 +95,17 @@ header nav div ul li a {
     width: 100%;
 }
 
+#formulario div.columna input,#formBuscador div.columna input,
+#formulario div.columna textarea, #formulario div.columna select  {
+    width: 100%;
+    border: 1px solid #333;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+
 main input {
     background-color: #ffffff;
     border-radius: 2px;
@@ -127,12 +150,47 @@ header form i {
 main {
     background-color: #ebebeb;
     padding-bottom: 14px;
+
 }
 
 main section {
     width: 90%;
-    margin: 0px auto;
+    max-width: 1200px;
+    margin: auto;
 }
+
+
+.hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}   
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+section a.aBtn, section button.aBtn{
+ padding: 1rem;
+ margin: 0.5rem;
+ text-align: center;
+ text-decoration: none;
+ color: #fff;
+ border: none;
+ cursor: pointer;
+}
+section a.success {
+    background-color: #39b54a;
+   }
+   section .danger{
+    background-color: red;
+   }
 
 main section article i {
     display: block;
@@ -148,8 +206,103 @@ main section article i {
     top: -15px;
 }
 
-#ultimaVisita,
-#seccionOfertas,
+
+section#productDetail {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+section#productDetail article {
+    width: 100%;
+}
+
+section#productDetail h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+section#productDetail form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1rem 1rem 0rem;
+    text-align: left;
+}
+
+section#productDetail form select,
+section#productDetail form input {
+    width: 50%;
+    border: 1px solid #333;
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+}
+
+section#productDetail form input {
+    width: 100%;
+    background-color: #3483fa;
+    border-color: transparent;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 1rem;
+}
+section#productDetail form input:hover {
+    background-color: #225eb8;
+}
+
+
+section#productDetail article div.cont1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+section#productDetail article div.cont1 img {
+    width: 100%;
+}
+
+section#productDetail article div.smallImg {
+    width: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-align: center;
+    align-self: start;
+    align-items: start;
+}
+
+section#productDetail article div.smallImg img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+section#productDetail article div.cont1 div {
+    width: 100%;
+}
+
+section#productDetail article div.artCantidad {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+section#productDetail article div.artCantidad input {
+    width: 100%;
+}
+
+section#productDetail article div.artCantidad div.cont1 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+section.articles,
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -165,6 +318,7 @@ h2 {
 .precio {
     font-size: 18px;
     margin-bottom: 0px;
+    color: #333;
 }
 
 .descuentos {
@@ -172,11 +326,7 @@ h2 {
     color: #39b54a;
 }
 
-.descripciones {
-    font-size: 16px;
-    display: none;
-    font-weight: 100;
-}
+
 
 .centralizar {
     text-align: center;
@@ -186,12 +336,29 @@ h2 {
 
 article {
     text-align: center;
-    margin: 10px auto 50px;
+    margin: 1rem;
     background-color: #fff;
     max-width: 250px;
     display: block;
     position: relative;
 }
+article a{ text-decoration: none;}
+
+#productDetail article {
+    text-align: left;
+    line-height:1.5;
+}
+section#productDetail h3.textPricePD{font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 0px;}
+    section#productDetail span.precioSinInteres strong{
+        color: #39b54a;
+        font-weight: 400;
+    }
+    section#productDetail span.precioSinInteres{
+        
+        margin-bottom: 1rem;
+    }
 
 article img {
     margin: auto;
@@ -233,16 +400,36 @@ article i:hover {
     transform: rotate(-90deg);
 }
 
+section.articles article{
+    transition-duration: 1s;
+    transition-property: box-shadow;   
+}
+section.articles article:hover{ 
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);  
+}
 
+section.articles article strong.descripciones {
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+    display: block;
+    margin-top: 1rem;
+}
+section.articles article:hover strong.descripciones{
+    color: #333;
+}
+
+
+.detalle {
+    color: rgba(0, 0, 0, .55);
+    text-align: left;
+}
 
 h4 {
     margin-bottom: 0px;
     margin-top: 1.5rem;
 }
-
-section p {
-    margin-top: 0px;
-}
+section .marginTop1Rem{ margin-top: 1rem;}
 
 #formulario {
     display: flex;
@@ -311,7 +498,18 @@ label {
     background-color: #0022AA;
 }
 
-footer{
+section#productDetail .compras {
+    width: auto;
+    flex-grow: 1;
+    display: flex;
+    align-self: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    max-width: 100%;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+footer {
     max-width: 1200px;
     margin: auto;
 }
@@ -323,23 +521,17 @@ footer section {
     padding: 1rem;
 }
 
-footer section i{
+footer section i {
     font-size: 2rem;
     color: #1259c3;
+    cursor: pointer;
 }
 
-footer section i:hover{
+footer section i:hover {
     color: #44c312;
 }
 
 @media (min-width: 361px) {
-    article:hover .descripciones {
-        display: block;
-    }
-
-    article:hover {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
 
     nav {
         display: block;
@@ -351,6 +543,27 @@ footer section i:hover{
 }
 
 @media (min-width: 769px) {
+
+
+    section#productDetail article div.cont1 {
+        width: 50%;
+    }
+
+    section#productDetail article div.width30 {
+        width: 30%;
+        border-left: 1px solid #ccc;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    section#productDetail article div.width70 {
+        width: 70%;
+    }
+
+    section#productCart article div.cont1 {
+        width: 50%;
+    }
+
 
     .search,
     #logo {
@@ -364,6 +577,99 @@ footer section i:hover{
 
     footer section {
         width: 33%;
+    }
+
+
+    .slideshow-container {
+        position: relative;
+        margin: auto;
+    }
+
+
+    .mySlides {
+        display: none;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
     }
 
 }

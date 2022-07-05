@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+    <%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/header') %>
+
+    <main>
+
+
+
+        <form action="/" name="formRegistrar" method="post">
+
+
+
+            <section id="formulario">
+
+                <h2 class="block"> Registrarme</h2>
+
+                <div class="columna">
+                    <input type="text" required name="nombre" placeholder="Ingrese su nombre" title="Ingresa tu nombre" />
+                </div>
+                <div class="columna">
+                    <input type="text" required name="apellido" placeholder="Ingrese su apellido" title="Ingresa tu apellido" />
+                </div>
+                <div class="columna">
+                    <input type="email" required name="email" placeholder="micorreo@mail.com" title="Mi e-mail" />
+                </div>
+                <div class="columna">
+                    <label> Fecha de nacimiento:</label><br>
+                    <input type="date" required name="dd/mm/aaaa" placeholder="dd/mm/aaaa" />
+                </div>
+                <div class="columna">
+                    <input type="text" required name="domicilio" placeholder="Ingrese su domicilio"
+                        title="Ingrese su domicilio" />
+                </div>
+                <div class="columna">
+                    <label> Perfil de usuario:</label><br>
+                    <div class="radio">
+                        <input type="radio" name="sexo" value="hombre" checked>
+                    </div>
+                    <div class="radioLabel">
+                        Hombre
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" name="sexo" value="mujer">
+                    </div>
+                    <div class="radioLabel">
+                        Mujer
+                    </div>
+                </div>
+
+                <div class="columna">
+                    <label> Intereses:</label><br>
+                    
+                    <div class="radio">
+                        <input type="checkbox"  name="int1" value="Electro">
+                    </div>
+                    <div class="radioLabel">
+                        Electro
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="int2" value="Moda">
+                    </div>
+                    <div class="radioLabel">
+                        Moda
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="int3" value="Hogar">
+                    </div>
+                    <div class="radioLabel">
+                        Hogar
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="int4" value="Jugueteria">
+                    </div>
+                    <div class="radioLabel">
+                        Jugetería
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="int5" value="Jugueteria">
+                    </div>
+                    <div class="radioLabel">
+                        Jugetería
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="int6" value="Jugueteria">
+                    </div>
+                    <div class="radioLabel">
+                        Vida Sana
+                    </div>
+
+                </div>
+
+                <div class="columna">
+                    <label> Foto Perfil:</label><br>
+                    <input type="file" name="foto"
+                        title="Foto" />
+                </div>
+
+                <div class="columna">
+                    <label> Contraseña:</label><br>
+                    <input type="password" required name="pass" placeholder="Nueva contraseña" />
+                </div>
+
+                <div class="columna">
+                    <label> Confirmar contraseña:</label><br>
+                    <input type="password" required name="cPass" placeholder="Confirmar contraseña" />
+                </div>
+              
+                <div class="radio">
+                    <input type="submit" value="Enviar" title="¿Listo?" />
+                </div>
+                <div class="radioLabel">
+                    <input type="reset" value="Cancelar" />
+                </div>
+
+            </section>
+        </form>
+
+
+    </main>
+
+        <%- include('partials/footer') %>
+        
+</body>
+
+</html>

@@ -1,21 +1,27 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3030;
+const methodOverride =  require('method-override');
 
-app.use(express.static(path.join(__dirname, "./public")));
+const routesProducts = require( "./src/routes/products.js" );
+const routesMain = require( "./src/routes/main.js" );
+const routesUsers = require( "./src/routes/users.js");
 
-app.listen(port, () =>
-    console.log("Levantando un servidor con Express"));
+app.use(express.static(path.join(__dirname, './public'))); 
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(methodOverride('_method'));
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/home.html"))
-});
 
-app.get("/register", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/register.html"))
-}); 
+app.set("view engine", "ejs");
+app.set("views", "./src/views");    
 
-app.get("/login", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/login.html"))
-});
+app.use( "/" , routesMain);
+app.use( "/products", routesProducts );
+app.use( "/users", routesUsers);
+
+
+app.listen(3030, () =>
+    console.log("Listo! servidor con Express"));
+
+    module.exports = app;

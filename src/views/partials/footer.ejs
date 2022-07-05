@@ -1,0 +1,72 @@
+<footer>
+
+    <section>
+        <i class="fa-solid fa-credit-card iconoPie"></i>
+        <h4>
+            Pagá con tarjeta o en efectivo
+        </h4>
+        <p>
+            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!
+        </p>
+    </section>
+
+    <section>
+        <i class="fa-solid fa-gift iconoPie"></i>
+        <h4>
+            Envío gratis desde $ 2.500
+        </h4>
+        <p>
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.
+        </p>
+    </section>
+
+    <section>
+        <i class="fa-solid fa-user-shield iconoPie"></i>
+        <h4>
+            Seguridad, de principio a fin
+        </h4>
+        <p>
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.
+        </p>
+    </section>
+
+    <section>
+        <p>
+            Copyright © 1999-2020 MercadoLiebre S.R.L.
+        </p>
+    </section>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+
+</footer>
