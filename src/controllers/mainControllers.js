@@ -12,11 +12,16 @@ const controller = {
 
 		const offers = products.filter(function (product) {
 
-			return product.discount > 0;
+			return product.productType == "offer";
+
+		});
+		const latest = products.filter(function (product) {
+
+			return product.productType == "latest";
 
 		});
 
-		res.render('index', { offers, toThousand });
+		res.render('index', { offers, latest, toThousand });
 
 	},
 	login: (req, res) => {

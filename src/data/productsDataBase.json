@@ -31,13 +31,13 @@
     },
     {
         "id": 3,
-        "name": "img-samsung-galaxy-s10",
+        "name": "samsung-galaxy-s10",
         "price": "1.990",
         "discount": "10",
         "amount": "5",
         "size": "m",
         "person": "mujeres",
-        "productType": "latest",
+        "productType": "offer",
         "category": "remeras",
         "image": [
             "img-samsung-galaxy-s10.jpg"
@@ -52,10 +52,75 @@
         "amount": "5",
         "size": "m",
         "person": "hombres",
-        "productType": "latest",
+        "productType": "offer",
         "category": "remeras",
         "image": [
             "img-tv-samsung-smart.jpg"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat ante nec massa tempus blandit. Duis fermentum tortor non leo scelerisque maximus eget vel magna. Maecenas ut neque in felis fringilla pulvinar. Integer condimentum dolor libero, id accumsan velit vulputate in. Duis interdum, magna vel blandit blandit, leo arcu hendrerit turpis, eu consectetur massa lacus sed velit. Aliquam dapibus porttitor nulla, ut tristique metus auctor sed. "
+    },
+    {
+        "id": 5,
+        "name": "Championes color negro para hombres",
+        "price": "1200",
+        "discount": "20",
+        "amount": "25",
+        "size": "40",
+        "person": "hombres",
+        "productType": "latest",
+        "category": "championes",
+        "image": [
+            "a1.jpg", 
+            "a2.jpg"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat ante nec massa tempus blandit. Duis fermentum tortor non leo scelerisque maximus eget vel magna. Maecenas ut neque in felis fringilla pulvinar. Integer condimentum dolor libero, id accumsan velit vulputate in. Duis interdum, magna vel blandit blandit, leo arcu hendrerit turpis, eu consectetur massa lacus sed velit. Aliquam dapibus porttitor nulla, ut tristique metus auctor sed. "
+    },
+    {
+        "id": 6,
+        "name": "Remera REEF para hombres",
+        "price": "800",
+        "discount": "80",
+        "amount": "2",
+        "size": "M",
+        "person": "hombres",
+        "productType": "latest",
+        "category": "remera",
+        "image": [
+            "a8.jpg", 
+            "a9.jpg"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat ante nec massa tempus blandit. Duis fermentum tortor non leo scelerisque maximus eget vel magna. Maecenas ut neque in felis fringilla pulvinar. Integer condimentum dolor libero, id accumsan velit vulputate in. Duis interdum, magna vel blandit blandit, leo arcu hendrerit turpis, eu consectetur massa lacus sed velit. Aliquam dapibus porttitor nulla, ut tristique metus auctor sed. "
+    }
+    ,
+    {
+        "id": 7,
+        "name": "Remera REEF para hombres",
+        "price": "800",
+        "discount": "80",
+        "amount": "2",
+        "size": "M",
+        "person": "hombres",
+        "productType": "latest",
+        "category": "remera",
+        "image": [
+            "a9.jpg", 
+            "a10.jpg"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat ante nec massa tempus blandit. Duis fermentum tortor non leo scelerisque maximus eget vel magna. Maecenas ut neque in felis fringilla pulvinar. Integer condimentum dolor libero, id accumsan velit vulputate in. Duis interdum, magna vel blandit blandit, leo arcu hendrerit turpis, eu consectetur massa lacus sed velit. Aliquam dapibus porttitor nulla, ut tristique metus auctor sed. "
+    },
+    {
+        "id": 8,
+        "name": "Remera NB para mujeres",
+        "price": "200",
+        "discount": "20",
+        "amount": "2",
+        "size": "M",
+        "person": "mujer",
+        "productType": "latest",
+        "category": "remera",
+        "image": [
+            "a15.jpg", 
+            "a16.jpg"
         ],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat ante nec massa tempus blandit. Duis fermentum tortor non leo scelerisque maximus eget vel magna. Maecenas ut neque in felis fringilla pulvinar. Integer condimentum dolor libero, id accumsan velit vulputate in. Duis interdum, magna vel blandit blandit, leo arcu hendrerit turpis, eu consectetur massa lacus sed velit. Aliquam dapibus porttitor nulla, ut tristique metus auctor sed. "
     }
