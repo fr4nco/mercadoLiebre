@@ -14,14 +14,16 @@ app.use(methodOverride('_method'));
 
 
 app.set("view engine", "ejs");
-app.set("views", "./src/views");    
+app.set("views", "./src/views"); 
+app.set("puerto", process.env.PORT || 80);
+
 
 app.use( "/" , routesMain);
 app.use( "/products", routesProducts );
 app.use( "/users", routesUsers);
 
 
-app.listen(3030, () =>
+app.listen(app.get("puerto"), ()=>
     console.log("Listo! servidor con Express"));
 
     module.exports = app;
